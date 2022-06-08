@@ -1,15 +1,19 @@
 BlinkEnde_LED.ino
 
-void setup ( ) { // I n i t i a l i s i e r t Pin 14 (LED1) a l s output .
-pinMode(14,OUTPUT);
+void setup ( ) {
+pinMode(3,OUTPUT);
 pinMode(0,INPUT);
+pinMode(6,INPUT);
+int a;
 }
-// LED1 b l i n k t im Zwe i s e kundentak t
+
 void loop() {
         if(digitalRead(6,HIGH)){
-            digitalWrite(14,HIGH);
+            delay(a);
+            digitalWrite(3,HIGH);
+            delayMicroseconds(10);
+            digitalWrite(3,LOW);
         }
-        delay(8);
-        digitalWrite(14,LOW);
+        
     }
 
