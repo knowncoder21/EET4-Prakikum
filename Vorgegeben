@@ -4,7 +4,7 @@ void setup ( ) { // I n i t i a l i s i e r t Pin 14 (LED1) a l s output .
 pinMode(14,OUTPUT);
 pinMode(0,INPUT);
 }
-// LED1 b l i n k t im Zwe i s e kundentak t
+
 void loop() {
     if(digitalRead(0, HIGH)){
         digitalWrite(14, HIGH);
@@ -12,11 +12,4 @@ void loop() {
     else{
         digitalWrite(14, LOW);
     }
-/*
-digitalWrite(14,HIGH) ; // LED1 an
-delay (1000) ; // 1000 ms warten
-digitlWrite(14,LOW) ; // LED1 aus
-de ay ( 1 0 0 0 ) ; // 1000 ms warten
-*/
 }
-// jojo
