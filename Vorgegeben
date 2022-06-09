@@ -8,7 +8,7 @@ int a;                      //Vor Ort bestimmen
 int aMax;
 int aMin;
 }
-
+// Dimmen mithilfe der Taster
 void loop() {
         if(digitalRead(6,HIGH)){
             delay(a);
