@@ -3,12 +3,18 @@ BlinkEnde_LED.ino
 void setup ( ) {
 pinMode(1, INPUT);
 pinMode(0,INPUT);
+<<<<<<< HEAD
 pinMode(3,OUTPUT);
 int a;                      //Vor Ort bestimmen
 int aMax;
 int aMin;
 }
 // Dimmen mithilfe der Taster
+=======
+int i = 0;
+}
+//Testen des Spannungsnulldurchgangs und Zählen der Nulldurchgänge
+>>>>>>> 2a998f8520a76c11798f3a2153b5ed1d7b25aec6
 void loop() {
         if(digitalRead(6,HIGH)){
             delay(a);
@@ -16,6 +22,7 @@ void loop() {
             delayMicroseconds(10);
             digitalWrite(3,LOW);
         }
+<<<<<<< HEAD
         if(digitalRead(0,HIGH)){
             a-=50;
 
@@ -24,5 +31,10 @@ void loop() {
             a+=50;
         }
         
+=======
+        delay(8);
+        digitalWrite(14,LOW);
+        i++;
+>>>>>>> 2a998f8520a76c11798f3a2153b5ed1d7b25aec6
     }
 
