@@ -3,12 +3,12 @@ BlinkEnde_LED.ino
 void setup ( ) {
 pinMode(1, INPUT);
 pinMode(0,INPUT);
+<<<<<<< HEAD
 pinMode(3,OUTPUT);
-int a;
+int a;                      //Vor Ort bestimmen
 int aMax;
 int aMin;
 }
-
 void loop() {
         if(digitalRead(6,HIGH)){
             delay(a);
@@ -23,6 +23,5 @@ void loop() {
         if(digitalRead(1, HIGH)){
             a+=50;
         }
-        
     }
 
