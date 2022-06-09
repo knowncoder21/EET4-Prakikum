@@ -10,6 +10,12 @@ int aMin;
 }
 
 void loop() {
+         if(digitalRead(6,HIGH)){
+            delay(a);
+            digitalWrite(3,HIGH);
+            delayMicroseconds(10);
+            digitalWrite(3,LOW);
+        }
         if(digitalRead(0,HIGH) && a> aMin){
             a-=50;
 
