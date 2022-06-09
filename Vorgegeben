@@ -5,7 +5,7 @@ pinMode(14,OUTPUT);
 pinMode(0,INPUT);
 int i = 0;
 }
-//Testen des Spannungsnulldurchgangs und Zählen der Nulldurchgänge
+//Testen des Spannungsnulldurchgangs und Zählen
 void loop() {
         if(digitalRead(6,HIGH)){
             digitalWrite(14,HIGH);
