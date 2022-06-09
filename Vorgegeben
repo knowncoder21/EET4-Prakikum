@@ -16,11 +16,11 @@ void loop() {
             delayMicroseconds(10);
             digitalWrite(3,LOW);
         }
-        if(digitalRead(0,HIGH) && a> aMin){
+        if(digitalRead(0,HIGH)){
             a-=50;
 
         }
-        if(digitalRead(1, HIGH) && a< aMax){
+        if(digitalRead(1, HIGH)){
             a+=50;
         }
         
